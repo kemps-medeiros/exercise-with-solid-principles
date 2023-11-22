@@ -1,0 +1,23 @@
+Criar a imagem (":app é uma tag e é opcional")
+docker build -t exercise-with-solid-principles:app .
+
+Verificar as imagens existentes
+docker image ls
+
+Apagar as imagens existentes
+docker image rm <id da imagem>
+
+Verificar os container existentes
+docker ps -a 
+
+Deletar os container existentes
+docker rm <id do container>
+
+Rodar a imagem do docker:
+docker run -d -p 3000:3000 exercise-with-solid-principles:app<nome da imagem:tag> Se tiver a tag tem q colocar a tag tambem
+
+Acessar o terminal do container do docker
+docker exec -it <id do container> /bin/bash
+
+Rodar container com volumes (compartilhar o que esta dentro da pasta src)
+docker run -d -v $(pwd)/src:/usr/src/app/src -p 3000:3000 exercise-with-solid-principles

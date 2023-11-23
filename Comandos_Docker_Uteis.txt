@@ -1,4 +1,4 @@
-Criar a imagem (":app é uma tag e é opcional")
+Buildar a imagem (":app é uma tag e é opcional")
 docker build -t exercise-with-solid-principles:app .
 
 Verificar as imagens existentes
@@ -13,7 +13,7 @@ docker ps -a
 Deletar os container existentes
 docker rm <id do container>
 
-Rodar a imagem do docker:
+Rodar container do docker:
 docker run -d -p 3000:3000 exercise-with-solid-principles:app<nome da imagem:tag> Se tiver a tag tem q colocar a tag tambem
 
 Acessar o terminal do container do docker

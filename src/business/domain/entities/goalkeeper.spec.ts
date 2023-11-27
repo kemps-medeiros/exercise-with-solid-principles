@@ -1,7 +1,8 @@
-import Goalkeeper from "./Goalkeeper";
+import Goalkeeper from "./goalkeeper";
 
 describe("Goalkeeper Class", () => {
     const goalkeeperPayload = {
+      id: 2,
       name: "Rogerio Ceni",
       position: "Goalkeeper",
     };
@@ -15,6 +16,7 @@ describe("Goalkeeper Class", () => {
     it("should have the correct name, position, and initial goals conceded", () => {
       const goalkeeper = new Goalkeeper(goalkeeperPayload);
 
+      expect(goalkeeper.id).toBe(goalkeeperPayload.id);
       expect(goalkeeper.name).toBe(goalkeeperPayload.name);
       expect(goalkeeper.position).toBe(goalkeeperPayload.position);
       expect(goalkeeper.goalsConceded).toBe(0);

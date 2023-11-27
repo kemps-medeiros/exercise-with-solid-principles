@@ -1,4 +1,4 @@
-import Player, { TPlayerPayload } from "./Player";
+import Player, { TPlayerPayload } from "./player";
 
 export default class Forward extends Player {
     private _goalsScored: number;

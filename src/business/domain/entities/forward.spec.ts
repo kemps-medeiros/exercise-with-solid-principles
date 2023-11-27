@@ -1,7 +1,8 @@
-import Forward from "./Forward";
+import Forward from "./forward";
 
 describe("Forward Class", () => {
     const forwardPayload = {
+      id: 3,
       name: "Neymar",
       position: "Forward",
     };
@@ -15,6 +16,7 @@ describe("Forward Class", () => {
     it("should have the correct name, position, and initial goals scored", () => {
       const forward = new Forward(forwardPayload);
       
+      expect(forward.id).toBe(forwardPayload.id);
       expect(forward.name).toBe(forwardPayload.name);
       expect(forward.position).toBe(forwardPayload.position);
       expect(forward.goalsScored).toBe(0);

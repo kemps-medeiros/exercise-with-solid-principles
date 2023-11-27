@@ -1,4 +1,4 @@
-import Player, { TPlayerPayload } from "./Player";
+import Player, { TPlayerPayload } from "./player";
 
 export default class Goalkeeper extends Player {
   private _goalsConceded: number;

@@ -1,4 +1,4 @@
-import PlayerRepository from "../domain/repositories/player.repository";
+import PlayerRepository from "../../domain/repositories/player.repository";
 import CreatePlayerUseCase, { CreatePlayerDto } from "./create-player.use-case"
 
 const SUCCESS_CREATE_PLAYER_DTO: CreatePlayerDto = {

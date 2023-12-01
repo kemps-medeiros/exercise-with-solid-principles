@@ -1,6 +1,6 @@
-import GoalkeeperRepository from "../domain/repositories/goalkeeper.repository";
-import IUpdateGoalkeeperGoalsConceeded from "./dto/input/update-goalkeeper-goalsconceeded-dto";
-import IGoalkeeperDto from "./dto/output/goalkeeper-dto.interface";
+import GoalkeeperRepository from "../../domain/repositories/goalkeeper.repository";
+import IUpdateGoalkeeperGoalsConceeded from "../dto/input/update-goalkeeper-goalsconceeded-dto";
+import IGoalkeeperDto from "../dto/output/goalkeeper-dto.interface";
 
 export default class UpdateGoalkeepeerGoalsConceededUseCase {
     constructor(private readonly goalkeepersRepository: GoalkeeperRepository) {}

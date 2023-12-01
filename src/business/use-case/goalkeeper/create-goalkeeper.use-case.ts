@@ -1,6 +1,7 @@
-import Goalkeeper from "../domain/entities/goalkeeper";
-import GoalkeeperRepository from "../domain/repositories/goalkeeper.repository";
-import { CreatePlayerDto } from "./create-player.use-case";
+import Goalkeeper from "../../domain/entities/goalkeeper";
+import GoalkeeperRepository from "../../domain/repositories/goalkeeper.repository";
+import { CreatePlayerDto } from "../player/create-player.use-case";
+
 
 export default class CreateGoalkeeperUseCase {
     constructor(private readonly goalkeeperRepository: GoalkeeperRepository) {}

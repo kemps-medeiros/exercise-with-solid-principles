@@ -1,5 +1,5 @@
-import Goalkeeper from "../domain/entities/goalkeeper";
-import GoalkeeperRepository from "../domain/repositories/goalkeeper.repository";
+import Goalkeeper from "../../domain/entities/goalkeeper";
+import GoalkeeperRepository from "../../domain/repositories/goalkeeper.repository";
 import GetAllGoalkeepeersUseCase from "./get-all-goalkeepeers.use-case";
 
 

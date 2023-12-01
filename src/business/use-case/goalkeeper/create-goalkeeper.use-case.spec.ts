@@ -1,6 +1,7 @@
-import GoalkeeperRepository from "../domain/repositories/goalkeeper.repository";
+import GoalkeeperRepository from "../../domain/repositories/goalkeeper.repository";
+import { CreatePlayerDto } from "../player/create-player.use-case";
 import CreateGoalkeeperUseCase from "./create-goalkeeper.use-case";
-import { CreatePlayerDto } from "./create-player.use-case";
+
 
 const SUCCESS_CREATE_GOALKEEPER_DTO: CreatePlayerDto = {
     id: 1,

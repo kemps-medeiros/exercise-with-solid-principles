@@ -1,5 +1,6 @@
-import Player from "../domain/entities/player";
-import PlayerRepository from "../domain/repositories/player.repository";
+
+import Player from "../../domain/entities/player";
+import PlayerRepository from "../../domain/repositories/player.repository";
 import GetAllPlayersUseCase from "./get-all-players.use-case";
 
 const SUCCESS_RETURN_PLAYERS: Player[] = 

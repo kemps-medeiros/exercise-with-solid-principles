@@ -1,5 +1,6 @@
-import PlayerRepository from "../domain/repositories/player.repository";
-import IPlayerDto from "./dto/output/player-dto.interface";
+import PlayerRepository from "../../domain/repositories/player.repository";
+import IPlayerDto from "../dto/output/player-dto.interface";
+
 
 
 export default class GetAllPlayersUseCase {

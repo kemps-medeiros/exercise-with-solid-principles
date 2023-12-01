@@ -1,7 +1,7 @@
-import Goalkeeper from "../domain/entities/goalkeeper";
-import GoalkeeperRepository from "../domain/repositories/goalkeeper.repository";
-import IUpdateGoalkeeperGoalsConceeded from "./dto/input/update-goalkeeper-goalsconceeded-dto";
-import IGoalkeeperDto from "./dto/output/goalkeeper-dto.interface";
+import Goalkeeper from "../../domain/entities/goalkeeper";
+import GoalkeeperRepository from "../../domain/repositories/goalkeeper.repository";
+import IUpdateGoalkeeperGoalsConceeded from "../dto/input/update-goalkeeper-goalsconceeded-dto";
+import IGoalkeeperDto from "../dto/output/goalkeeper-dto.interface";
 import UpdateGoalkeepeerGoalsConceededUseCase from "./update-goalkeeper-goalsconceded.use-case";
 
 const SUCCESS_INPUT: IUpdateGoalkeeperGoalsConceeded = {

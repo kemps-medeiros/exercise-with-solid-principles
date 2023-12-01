@@ -1,5 +1,6 @@
-import GoalkeeperRepository from "../domain/repositories/goalkeeper.repository";
-import IGoalkeeperDto from "./dto/output/goalkeeper-dto.interface";
+import GoalkeeperRepository from "../../domain/repositories/goalkeeper.repository";
+import IGoalkeeperDto from "../dto/output/goalkeeper-dto.interface";
+
 
 export default class GetAllGoalkeepeersUseCase {
     constructor(private readonly goalkeepersRepository: GoalkeeperRepository) {}

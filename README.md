@@ -39,10 +39,11 @@ Este projeto foi criado com o objetivo de consolidar conhecimentos sobre os prin
   - GoalkeeperRepository é responsável apenas por operações relacionadas a Goalkeeper.
   - CreateGoalkeeperUseCase é responsável pela criação e atualização de Goalkeepers.
 2. **Open-Closed Principle (Princípio Aberto-Fechado):**
-  - Extensões podem ser adicionadas sem modificar as classes existentes.
+  - As classes de Goalkeeper e Forward extendem da classe Player, assim podemos adicionar novos comportamentos sem alterar os existentes.
 3. **Liskov Substitution Principle (Princípio da Substituição de Liskov):**
-  - Player pode ser substituído por suas subclasses (Goleiros e Atacantes) sem afetar o comportamento do programa.
+  - Player pode ser substituído por suas subclasses (Goalkeeper e Forward) sem afetar o comportamento do programa.
 4. **Interface Segregation Principle (Princípio da Segregação de Interfaces):**
-  - Interfaces são específicas e não têm métodos desnecessários.
+  - Interfaces devem ser específicas e não ter métodos desnecessários.
 5. **Dependency Inversion Principle (Princípio da Inversão de Dependência):**
   - Dependências são injetadas via construtor, permitindo maior flexibilidade e testabilidade.
+  - Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender de abstração.(HttpServer)

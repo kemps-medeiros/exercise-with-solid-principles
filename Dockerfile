@@ -6,10 +6,6 @@ COPY package*.json ./
 
 RUN npm install
 
-RUN npm i --save-dev @types/express
-
-RUN npm install --save-dev jest ts-jest @types/jest
-
 COPY . .
 
 RUN npm run build

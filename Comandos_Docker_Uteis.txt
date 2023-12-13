@@ -1,5 +1,5 @@
-Buildar a imagem (":app é uma tag e é opcional")
-docker build -t exercise-with-solid-principles:app .
+Buildar a imagem 
+docker build -t exercise-with-solid-principles .
 
 Verificar as imagens existentes
 docker image ls

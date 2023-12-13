@@ -1,12 +1,20 @@
-import express, { Application, Request, Response } from 'express';
+import CreateGoalkeeperController from "./application/controller/goalkeeper/create-goalkeeper.controller";
+import GetAllGoalkeeperController from "./application/controller/goalkeeper/get-all-goalkeeper.controller";
+import CreateGoalkeeperUseCase from "./business/use-case/goalkeeper/create-goalkeeper.use-case";
+import GetAllGoalkeepeersUseCase from "./business/use-case/goalkeeper/get-all-goalkeepeers.use-case";
+import GoalkeeperRepositoryInMemory from "./infrastructure/persistence/repository-in-memory/goalkeeper-in-memory.repository";
+import HttpServer from "./server/http-server";
 
-const app: Application = express();
-const port = 3000;
+const goalkeeperRepository = new GoalkeeperRepositoryInMemory()
 
-app.get('/', (req: Request, res: Response) => {
-  res.send('Hello, SOLID World!');
-});
+const createGoalkeeperUseCase = new CreateGoalkeeperUseCase(goalkeeperRepository);
+const getAllGoalkeeperUseCase = new GetAllGoalkeepeersUseCase(goalkeeperRepository);
 
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
+const createGoalkeeperController = new CreateGoalkeeperController(createGoalkeeperUseCase);
+const getAllGoalkeeperController = new GetAllGoalkeeperController(getAllGoalkeeperUseCase);
+
+const httpServer = new HttpServer(createGoalkeeperController, getAllGoalkeeperController);
+
+httpServer.start(3000);
+
+

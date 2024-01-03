@@ -19,8 +19,8 @@ Este projeto foi criado com o objetivo de consolidar conhecimentos sobre os prin
 1. **Clonar o Repositório:**
 
    ```bash
-   git clone https://github.com/seu-usuario/seu-projeto.git
-   cd seu-projeto
+   git clone https://github.com/kemps-medeiros/exercise-with-solid-principles/
+   cd exercise-with-solid-principles
    ```
 
 2.  **Buildar a imagem do docker:**
